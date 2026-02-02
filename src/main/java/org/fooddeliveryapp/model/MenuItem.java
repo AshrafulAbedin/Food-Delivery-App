@@ -1,0 +1,35 @@
+package org.fooddeliveryapp.model;
+
+public class MenuItem {
+    private String name;
+    private double price;
+    private int inStockQnty;
+    private boolean available;
+
+    //getter
+    public String getName() {
+        return name;
+    }
+    public double getPrice() {
+        return price;
+    }
+    public int getInStockQnty() {
+        return inStockQnty;
+    }
+    public boolean isAvailable() {
+        return available;
+    }
+    //setter
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setPrice(double price) {
+        this.price = price;
+    }
+    public void setInStockQnty(int inStockQnty) {
+        this.inStockQnty = inStockQnty;
+    }
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
+}

@@ -1,0 +1,25 @@
+﻿# Maven
+target/
+*.jar
+*.war
+*.ear
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+out/
+
+# Java
+*.class
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Data files (don't commit generated JSON)
+data/
+
+# Secrets
+*.env
