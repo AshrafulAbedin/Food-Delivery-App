@@ -15,6 +15,7 @@ public class JsonStorage {
     //ObjectMapper = JSON <-> Java translator
     //converts Java Obj to JSON Strings and
     //convert JSON Strings to Java Obj
+    //http://baeldung.com/jackson-object-mapper-tutorial
     private final String restaurantsFile = "data/restaurants.json";
     //File path = Where data lives on disk
     public JsonStorage() {
@@ -23,12 +24,15 @@ public class JsonStorage {
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
     }
 
+    //saving Restaurants through object mapper write value
+    // Check data folder
     public void saveRestaurants(List<Restaurant> restaurants) throws IOException
     {
         new File("data").mkdirs();
         mapper.writeValue(new File(restaurantsFile), restaurants);
     }
 
+    //Loading Restaurants by reading JSON file through object mapper
     public List<Restaurant> loadRestaurants() throws IOException
     {
         File file = new File(restaurantsFile);

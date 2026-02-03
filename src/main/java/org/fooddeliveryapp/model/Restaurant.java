@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Restaurant {
+    private String id;
     private String name;
     private String address;
     private String area;
@@ -19,6 +20,9 @@ public class Restaurant {
 
     //getter
 
+    public String getId() {
+        return id;
+    }
     public String getName() {
         return name;
     }
@@ -32,10 +36,10 @@ public class Restaurant {
         return isOpen;
     }
 
-
-
-
     //setter
+    public void setId(String id) {
+        this.id = id;
+    }
     public void setName(String name) {
         this.name = name;
     }
